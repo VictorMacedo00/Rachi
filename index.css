@@ -1,68 +1,133 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Sora:wght@300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Sora:wght@300;500;700&display=swap");
 
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
-
 
 /* Container */
 
 .container {
-    max-width: 1080px;
-    height: auto;
-    margin: 0 auto;
+  width: 1080px;
+  height: auto;
+  margin: 0 auto;
 }
 
 /* Header */
 .header {
-    width: 100vw;
-    height: 70px;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  height: 70px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo span {
-    font-family: 'Sora', sans-serif;
-    font-size: 1.4rem;
-    color: #293145;
+  font-family: "Sora", sans-serif;
+  font-size: 1.4rem;
+  color: #293145;
 }
 
 .nav {
-    width: 500px;
-    display: flex;
-    justify-content: space-between;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav li {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 500;
-    padding: 15px;
-    cursor: pointer;
-    color: #6E7275;
-    transition: all 0.4s;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 15px;
+  cursor: pointer;
+  color: #6e7275;
+  transition: all 0.4s;
 }
 
 .nav li:hover {
-    color: #3e4142;
+  color: #3e4142;
+}
+
+/* Banner */
+.banner {
+  width: 100vw;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  background-color: #eff8ff;
+}
+
+.contentBanner {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+
+.content {
+  width: 50%;
+  height: 100%;
+}
+
+.contentInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contentText {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.contentText span {
+    font-family: 'Sora', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    color: #293145;
+}
+
+.contentInfo button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #0F9AFE;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.contentInfo button:hover {
+    background-color: #0b67a8;
+}
+
+.contentImg {
+    max-width: 560px;
 }
